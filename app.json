@@ -12,20 +12,16 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+    "ios": {
+      "supportsTablet": true
     },
+    "platforms": ["android", "ios"],
     "plugins": [
       "expo-router"
     ],

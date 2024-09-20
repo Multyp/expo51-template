@@ -30,6 +30,11 @@ start:
 	@echo "Starting Expo development server..."
 	yarn start
 
+.PHONY: start-tunnel
+start-tunnel:
+	@echo "Starting Expo development server..."
+	yarn start --tunnel
+
 # Run the Expo project on Android
 .PHONY: start-android
 start-android:
@@ -69,6 +74,7 @@ help:
 	@echo "  clean     		- Clean project and remove node_modules"
 	@echo "  reset     		- Clean and reset the project (like 'reset-project' script)"
 	@echo "  start     		- Start the Expo development server"
+	@echo "  start-tunnel     	- Try this if unable to access development server using a physical device"
 	@echo "  start-android   	- Run the project on Android"
 	@echo "  start-ios       	- Run the project on iOS"
 	@echo "  test      		- Run tests using Jest"
